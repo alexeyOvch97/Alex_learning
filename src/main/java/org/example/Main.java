@@ -22,15 +22,15 @@ public class Main {
         System.out.println("Введите хобби");
         String hobby = scanner.nextLine();
 */
-        /*Ovchinnikov chel = new Ovchinnikov("name", "skill", 26, "hobby");
+       /* Ovchinnikov chel = new Ovchinnikov("name", "skill", 26, "hobby");
 
         chel.favouriteMusic();
 
         Human human = new Human("hz", "no", 67);
         human.favouriteMusic();*/
 
-        EgorSheep egorSheep = new EgorSheep();
-        egorSheep.singing();
+        /*EgorSheep egorSheep = new EgorSheep();
+        egorSheep.singing();*/
 
         EgorKringe egorKringe = new EgorKringe();
         egorKringe.singing();
