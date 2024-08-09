@@ -8,7 +8,7 @@ public class Main {
     public static int length = 1;
 
     public static void main(String[] args) {
-        /*Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введите имя");
         String name = scanner.nextLine();
@@ -21,7 +21,7 @@ public class Main {
 
         System.out.println("Введите хобби");
         String hobby = scanner.nextLine();
-*/
+
        /* Ovchinnikov chel = new Ovchinnikov("name", "skill", 26, "hobby");
 
         chel.favouriteMusic();
