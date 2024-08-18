@@ -5,35 +5,31 @@ import java.util.Scanner;
 public class Main {
 
 
-    public static int length = 1;
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите первое число");
+        Double firstInt = scanner.nextDouble();
 
-        System.out.println("Введите имя");
-        String name = scanner.nextLine();
+        System.out.println("Введите второе число");
+        String secondInt = scanner.next();
 
-        System.out.println("Введите возраст");
-        int age = Integer.parseInt(scanner.nextLine());
 
-        System.out.println("Введите навык");
-        String skill = scanner.nextLine();
+        System.out.println("Введите номер операции: \n 1 - Сложение \n 2 - Вычитание  \n 3 - Умножение");
+        Integer operation = scanner.nextInt();
 
-        System.out.println("Введите хобби");
-        String hobby = scanner.nextLine();
-
-       /* Ovchinnikov chel = new Ovchinnikov("name", "skill", 26, "hobby");
-
-        chel.favouriteMusic();
-
-        Human human = new Human("hz", "no", 67);
-        human.favouriteMusic();*/
-
-        /*EgorSheep egorSheep = new EgorSheep();
-        egorSheep.singing();*/
-
-        EgorKringe egorKringe = new EgorKringe();
-        egorKringe.singing();
+        switch (operation) {
+            case 1:
+                System.out.println("Результат: " + (firstInt + Double.valueOf(secondInt)));
+                break;
+            case 2:
+                System.out.println("Результат: " + (firstInt - Double.valueOf(secondInt)));
+                break;
+            case 3:
+                System.out.println("Результат: " + (firstInt * Double.valueOf(secondInt)));
+                break;
+            default:
+                System.out.println("Операция неопределена");
+        }
 
     }
 }
